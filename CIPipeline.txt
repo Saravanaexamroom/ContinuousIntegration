@@ -1,0 +1,31 @@
+pipeline { 
+agent any 
+    stages { 
+        stage ('Build') { 
+            steps {
+                echo 'Build tha Java Code....'
+            }
+ 
+        }
+        stage ('Test') {
+            steps {
+                echo 'Test the Java Code....'
+            }
+        
+        }
+        stage ('QA') { 
+            steps {
+                echo 'Check the Quality of Java Code....'
+            }
+        
+        }
+        stage ('Deploy') { 
+            steps {
+                echo 'Deployed the Java Final Code...'
+            }
+ 
+        }
+ 
+    }           
+ }
+
